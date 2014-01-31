@@ -1,79 +1,0 @@
-10
-
-dir
-50
-https://boyd-pc:9443/svn/java_tutorial/NewLearnings/src/com/densmore
-https://boyd-pc:9443/svn/java_tutorial
-
-
-
-2012-06-01T21:35:06.718675Z
-50
-boyd
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-6a9bb449-2d3f-0044-b3f5-b4828d34ebba
-
-basicconcurrency
-dir
-
-basicio
-dir
-
-checkers
-dir
-
-enumtest
-dir
-
-exceptionhandling
-dir
-
-fileio
-dir
-
-generics
-dir
-
-highlevelconcurrency
-dir
-
-inheritance
-dir
-
-nestedclasses
-dir
-
-numbers
-dir
-
-otherusefulmethods
-dir
-
-packagetest
-dir
-
-strings
-dir
-
-swing
-dir
-
-treewalking
-dir
-
-watchdir
-dir
-
