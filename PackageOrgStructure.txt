@@ -1,0 +1,5 @@
+This is how we do it.
+
+We no longer have a project for each and every thing.  Instead, we'll have a 
+project for the really high level divisions and divide our classes into
+nice little packages from there.
