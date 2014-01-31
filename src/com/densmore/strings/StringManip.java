@@ -38,9 +38,7 @@ public class StringManip {
 		
 		findIndexes(toManip);
 		System.out.println();
-		
-		
-		
+
 	}
 
 }

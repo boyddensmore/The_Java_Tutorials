@@ -132,7 +132,7 @@ public class Find {
      * @param args
      * @throws IOException
      * 
-     * {@link treewalking.Copy#TreeCopier TreeCopier}
+     * {@link com.densmore.treewalking.Copy#TreeCopier TreeCopier}
      */
     public static void main(String[] args)
         throws IOException {

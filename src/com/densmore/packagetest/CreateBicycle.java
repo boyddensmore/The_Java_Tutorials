@@ -2,9 +2,12 @@ package com.densmore.packagetest;
 
 import com.densmore.inheritance.MountainBike;
 
+
+
 //Example of importing only a single static.
 //This would be used by the println at the bottom.
 //import static java.lang.Math.PI;
+
 
 //Example of importing all statics from a package.
 //This would be used by the println at the bottom.
