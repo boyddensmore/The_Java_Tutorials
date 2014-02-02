@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 
 public class ThePathsClass {
 	
-	public static void main(String[] args) {
+	public void main(String[] args) {
 
 		Path p1 = Paths.get("/tmp/foo");
 

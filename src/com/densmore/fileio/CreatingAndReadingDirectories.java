@@ -9,18 +9,16 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
-import sun.org.mozilla.javascript.internal.ObjToIntMap.Iterator;
-
 public class CreatingAndReadingDirectories {
 
-	public static void listFSRootDirs(){
+	public void listFSRootDirs(){
 		Iterable<Path> dirs = FileSystems.getDefault().getRootDirectories();
 		for (Path name: dirs) {
 		    System.err.println(name);
 		}
 	}
 	
-	public static void listAllDirectoryContents(Path path){
+	public void listAllDirectoryContents(Path path){
 		try (DirectoryStream<Path> stream = Files.newDirectoryStream(path)){
 			for (Path file: stream) {
 				System.out.println(file.getFileName());
@@ -32,7 +30,7 @@ public class CreatingAndReadingDirectories {
 		}
 	}
 	
-	public static ArrayList<String> filteredDirectoryListing(Path path, String filter) {
+	public ArrayList<String> filteredDirectoryListing(Path path, String filter) {
 		ArrayList<String> results = new ArrayList<String>();
 		
 		try (DirectoryStream<Path> stream = Files.newDirectoryStream(path, filter)) {
@@ -47,7 +45,7 @@ public class CreatingAndReadingDirectories {
 		
 	}
 	
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		Path newPath = Paths.get(System.getProperty("user.home")+ "\\testDir");
 		Path multiLevelPath = Paths.get(System.getProperty("user.home")+ "\\testDir\\dir2\\dir3\\dir4");
 		Path pathWithContents = Paths.get(System.getProperty("user.home"));

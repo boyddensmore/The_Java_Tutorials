@@ -48,7 +48,7 @@ public class PlanetEnum {
 		}
 	}
 
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		double earthWeight = Double.parseDouble("150");
 		double mass = earthWeight / Planet.EARTH.surfaceGravity();
 		for (Planet p : Planet.values())

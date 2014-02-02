@@ -13,9 +13,9 @@ import java.nio.file.attribute.BasicFileAttributes;
 
 public class BasicFilesAndStores {
 
-	static Path path = null;
-	static Path newPath = null;
-	static Path newMovePath = null;
+	private Path path = null;
+	private Path newPath = null;
+	private Path newMovePath = null;
 
 	// Make sure the file exists.
 	public static boolean verifyPath(Path pathToCheck) {
@@ -24,12 +24,12 @@ public class BasicFilesAndStores {
 
 	// Make sure access is possible. Reading and writing, as well as making sure
 	// this is a regular file.
-	public static boolean verifyFullFileAccess(Path pathToCheck) {
+	public boolean verifyFullFileAccess(Path pathToCheck) {
 		return Files.isRegularFile(pathToCheck) & Files.isReadable(pathToCheck)
 				& Files.isWritable(pathToCheck);
 	}
 
-	public static boolean deleteFile(Path path) {
+	public boolean deleteFile(Path path) {
 		try {
 			Files.delete(path);
 			return true;
@@ -47,7 +47,7 @@ public class BasicFilesAndStores {
 	}
 	
 	
-	public static void main(String[] args) {
+	public void main(String[] args) {
 
 		path = Paths.get(System.getProperty("user.home") + "\\foo.txt");
 		newPath = Paths.get(System.getProperty("user.home") + "\\fooNew.txt");
