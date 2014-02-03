@@ -1,4 +1,4 @@
-package com.densmore.inheritance;
+package com.densmore.classes;
 
 public class PlayWithBikes {
 

@@ -1,4 +1,4 @@
-package com.densmore.inheritance;
+package com.densmore.classes;
 
 import java.util.ArrayList;
 import java.util.List;
